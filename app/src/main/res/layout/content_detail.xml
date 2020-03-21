@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.detailmarker.DetailActivity"
+    tools:showIn="@layout/activity_detail">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+        android:layout_below="@+id/imageViewHeader"
+        android:id="@+id/cardView"
+        android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+            <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/btnIDPEL"
+                    android:text="1234567777777"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/font_24"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    app:cardBackgroundColor="@color/colorPrimary">
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvNamaDetail"
+                            android:textSize="@dimen/font_18"
+                            android:layout_gravity="center"
+                            android:textAllCaps="true"
+                            android:text="@string/et_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/tvIDPELDetail"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/font_24"
+                            android:text="@string/et_idpel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/ic_light"
+                    android:src="@drawable/ic_golongan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvGolonganDetail"
+                    android:layout_toRightOf="@+id/ic_light"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/font_10"
+                    android:text="Rumah Tangga"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_toRightOf="@+id/ic_light"
+                    android:id="@+id/tvTypeGolongan"
+                    android:layout_below="@+id/tvGolonganDetail"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/font_10"
+                    android:text="Rumah Tangga"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:background="@drawable/line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_daya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvDayaDetail"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/font_10"
+                    android:text="20000 kv"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+            <View
+                android:background="@drawable/line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+
+            <!--                Jenis Pelanggaran-->
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:src="@drawable/ic_pelanggaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvJenisPelanggaranDetail"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="@dimen/font_10"
+                    android:text="E1"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/font_14"
+            android:text="@string/et_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+
+            android:id="@+id/tvAlamatDetail"
+            android:textSize="@dimen/font_18"
+            android:text="@string/et_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/font_12"
+            android:text="@string/et_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvTlpDetail"
+            android:textSize="@dimen/font_18"
+            android:text="@string/et_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/font_12"
+                    android:text="@string/et_noreport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <TextView
+                    android:id="@+id/tvNoLaporan"
+                    android:textSize="@dimen/font_18"
+                    android:text="@string/et_noreport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/font_12"
+                    android:text="@string/et_violation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvPelanggaran"
+                    android:textSize="@dimen/font_18"
+                    android:text="@string/et_violation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/font_12"
+                    android:text="Petugas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvPetugas"
+                    android:textSize="@dimen/font_18"
+                    android:text="Petugas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/font_12"
+                    android:text="Unit Pelayanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvUnitPelayanan"
+                    android:textSize="@dimen/font_18"
+                    android:text="Unit Pelaynanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

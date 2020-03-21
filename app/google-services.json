@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "970536685670",
+    "firebase_url": "https://analog-premise-264316.firebaseio.com",
+    "project_id": "analog-premise-264316",
+    "storage_bucket": "analog-premise-264316.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970536685670:android:d0abf0a8662801ded71da7",
+        "android_client_info": {
+          "package_name": "com.montel.Montel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970536685670-b1bp8ash89nfu5cnrkg10a5pfpiqv9o6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhKdteVn1hBsO5O4f9uYqtFEH79RYST0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970536685670-b1bp8ash89nfu5cnrkg10a5pfpiqv9o6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

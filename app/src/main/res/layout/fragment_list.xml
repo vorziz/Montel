@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <LinearLayout
+       android:id="@+id/rrSearch"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <androidx.appcompat.widget.SearchView
+          android:id="@+id/searchView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+      </androidx.appcompat.widget.SearchView>
+
+   </LinearLayout>
+
+   <RelativeLayout
+       android:layout_below="@+id/rrSearch"
+       android:id="@+id/rrly"
+       android:layout_margin="5dp"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <TextView
+          android:layout_marginTop="5dp"
+          android:id="@+id/txtFilter"
+          android:text="Filter :"
+          android:gravity="center"
+          android:foregroundGravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      <androidx.appcompat.widget.AppCompatSpinner
+          android:layout_toRightOf="@+id/txtFilter"
+          android:id="@+id/spFilter"
+          android:layout_margin="5dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+   </RelativeLayout>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_below="@+id/rrly"
+       android:id="@+id/rv_list_customer"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+<!--   <com.app.adprogressbarlib.AdCircleProgress-->
+<!--       android:id="@+id/pgb_progress"-->
+<!--       android:layout_width="60dp"-->
+<!--       android:layout_height="60dp"-->
+<!--       android:layout_centerInParent="true"-->
+<!--       app:adpgb_background_color="@android:color/transparent"-->
+<!--       android:backgroundTintMode="add"-->
+<!--       app:adpgb_finished_color="@android:color/white"-->
+<!--       app:adpgb_gradient_color_one="@color/colorPrimary"-->
+<!--       app:adpgb_gradient_color_two="@color/colorPrimaryDark"-->
+<!--       app:adpgb_unfinished_color="@android:color/transparent"-->
+<!--       custom:adpgb_finished_stroke_width="5dp"-->
+<!--       app:adpgb_progress="90"-->
+<!--       app:adpgb_text_size="12dp"-->
+<!--       custom:adpgb_show_text="false"-->
+<!--       custom:adpgb_unfinished_stroke_width="5dp" />-->
+
+
+</RelativeLayout>
